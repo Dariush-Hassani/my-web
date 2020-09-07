@@ -1,0 +1,19 @@
+#contactCover{
+    background-color: rgb(20,20,20);
+    /* border: salmon solid thin; */
+}
+#contactCanvas{
+    z-index: -1;
+    position: relative;
+    margin-top: 8%;
+    /* border: salmon solid thin; */
+}
+@media only screen and (max-width: 767px) {
+    #contactCover{
+        margin-left: 16%;
+    }
+    #contactCanvas{
+        margin-left: 16%;
+        margin-top: 0%;
+    }
+  }

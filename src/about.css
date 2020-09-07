@@ -1,0 +1,147 @@
+#main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    /* border: thin solid red; */
+    overflow: hidden;
+}
+#intro{
+    /* border : red solid thin; */
+    display: inline-block;
+    padding-top: 18.5%;
+    padding-left: 4%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    text-align: left;
+    overflow: hidden;
+    margin-top: 2%;
+}
+#titleDiv {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+}
+#title {
+    font-size: 3.2vw;
+    margin-top: -2%;
+    animation: slide-down 2s;
+}
+#textDiv {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+    height: 25%;
+    padding-top: 0%;
+}
+#text{
+    font-size: 1.7vw;
+    text-align: justify;
+    margin-top: 0%;
+    animation: slide-down 2s;
+}
+#buttonDiv {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+    height: 15%;
+}
+.button{
+    border: thin solid;
+    border-color: white;
+    padding: 1.2%;
+    font-size: 1.7vw;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+    background: linear-gradient(to right, white 50%,rgb(254,59,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    margin-top: 0%;
+    animation: slide-down 2s;
+}
+.button:hover{
+    cursor: pointer;
+    background-position: left bottom;
+    color: rgb(254,59,0);
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+      margin-top: 100%;
+    }
+    to {
+        opacity: 1;
+      margin-top: -2%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #intro{
+        /* border : red solid thin; */
+        display: block;
+        padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        text-align: center;
+        overflow: hidden;
+        margin-top: -2%;
+    }
+    #titleDiv {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+    }
+    #title {
+        font-size: 20pt;
+        margin-top: 0%;
+        animation: slide-down 2s;
+    }
+    #textDiv {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+        height: 25%;
+        padding-top: 0%;
+    }
+    #text{
+        font-size: 12pt;
+        text-align: justify;
+        margin-top: 0%;
+        animation: slide-down 2s;
+    }
+    #buttonDiv {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+        height: 15%;
+    }
+    .button{
+        border: thin solid;
+        border-color: white;
+        padding: 1.2%;
+        font-size: 12pt;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        transition: 0.5s;
+        background: linear-gradient(to right, white 50%,rgb(254,59,0) 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        margin-top: 0%;
+        animation: slide-down 2s;
+    }
+  }

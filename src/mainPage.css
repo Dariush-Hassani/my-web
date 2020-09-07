@@ -1,0 +1,147 @@
+#mainMain{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    /* border: thin solid red; */
+    overflow: hidden;
+}
+#introMain{
+    /* border : blue solid thin; */
+    display: inline-block;
+    padding-top: 18.5%;
+    padding-left: 4%;
+    padding-right: 5%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    text-align: left;
+    overflow: hidden;
+    margin-top: 12%;
+}
+#titleDivMain {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+}
+#titleMain {
+    font-size: 3.4vw;
+    margin-top: 0%;
+    animation: slide-down-Main 2s;
+}
+#textDivMain {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+    height: 25%;
+    padding-top: 5%;
+}
+#textMain{
+    font-size: 1.7vw;
+    text-align: justify;
+    margin-top: 0%;
+    animation: slide-down-Main 2s;
+}
+#buttonDivMain {
+    width:100%;
+    overflow:hidden;
+    /* border : orange solid thin; */
+    box-sizing: border-box;
+    height: 15%;
+}
+.buttonMain{
+    border: thin solid;
+    border-color: white;
+    padding: 1.2%;
+    display: inline-block;
+    font-size: 1.7vw;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+    background: linear-gradient(to right, white 50%,rgb(254,59,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    margin-top: 0%;
+    animation: slide-down-Main 2s;
+}
+.buttonMain:hover{
+    cursor: pointer;
+    background-position: left bottom;
+    color: rgb(254,59,0);
+}
+
+@keyframes slide-down-Main {
+    from {
+        opacity: 0;
+      margin-top: 100%;
+    }
+    to {
+        opacity: 1;
+      margin-top: 0%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #introMain{
+        /* border : red solid thin; */
+        display: inline-block;
+        padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        text-align: center;
+        overflow: hidden;
+        margin-top: -2%;
+    }
+    #titleDivMain {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+    }
+    #titleMain {
+        font-size: 20pt;
+        margin-top: 0%;
+        animation: slide-down-Main 2s;
+    }
+    #textDivMain {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+        height: 25%;
+        padding-top: 0%;
+    }
+    #textMain{
+        font-size: 12pt;
+        text-align: justify;
+        margin-top: 0%;
+        animation: slide-down-Main 2s;
+    }
+    #buttonDivMain {
+        width:100%;
+        overflow:hidden;
+        /* border : orange solid thin; */
+        box-sizing: border-box;
+        height: 15%;
+    }
+    .buttonMain{
+        border: thin solid;
+        border-color: white;
+        padding: 1.2%;
+        font-size: 12pt;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        transition: 0.5s;
+        background: linear-gradient(to right, white 50%,rgb(254,59,0) 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        margin-top: 0%;
+        animation: slide-down-Main 2s;
+    }
+  }
