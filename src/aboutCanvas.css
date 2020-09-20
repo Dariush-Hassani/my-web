@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #aboutCover{
     background-color: rgb(20,20,20);
     /* border: salmon solid thin; */
@@ -16,4 +17,24 @@
         margin-left: 25%;
         margin-top: 0%;
     }
+=======
+#aboutCover{
+    background-color: rgb(20,20,20);
+    /* border: salmon solid thin; */
+}
+#aboutCanvas{
+    z-index: -1;
+    position: relative;
+    margin-top: 8%;
+    /* border: salmon solid thin; */
+}
+@media only screen and (max-width: 767px) {
+    #aboutCover{
+        margin-left: 25%;
+    }
+    #aboutCanvas{
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+>>>>>>> b58e52fa7460b8445a86bc01e64268ca7d245cbb
   }
